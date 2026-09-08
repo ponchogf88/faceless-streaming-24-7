@@ -1,0 +1,17 @@
+# OS Metadata
+.DS_Store
+Thumbs.db
+
+# Media files & large binaries
+*.mp4
+*.mkv
+*.mov
+*.wav
+*.aac
+!assets/Informe_Maestro_Canales_Faceless_y_Streaming_24-7.pdf
+
+# Logs & temp
+*.log
+__pycache__/
+*.pyc
+.system_generated/

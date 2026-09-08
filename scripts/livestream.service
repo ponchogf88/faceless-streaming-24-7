@@ -1,0 +1,22 @@
+[Unit]
+Description=Demonio de Transmisión Continua 24/7 (AMDA Agentic Engine)
+After=network.target network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/stream
+ExecStart=/bin/bash /home/stream/scripts/stream_loop.sh
+Restart=always
+RestartSec=5
+StandardOutput=append:/var/log/livestream.log
+StandardError=append:/var/log/livestream.log
+
+# Límites de recursos y protección
+LimitNOFILE=65536
+KillMode=process
+TimeoutStopSec=15
+
+[Install]
+WantedBy=multi-user.target
