@@ -9,6 +9,7 @@ Thumbs.db
 *.wav
 *.aac
 !assets/Informe_Maestro_Canales_Faceless_y_Streaming_24-7.pdf
+!assets/videos/LO FI 24 7 30 SEC VID.mp4
 
 # Logs & temp
 *.log
